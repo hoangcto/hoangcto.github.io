@@ -257,9 +257,14 @@ header h1 {
 }
 
 /* Phones and small tablets */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 900px) {
+  .cd-timeline-content {
+    width: calc(100% - 49px);   /* 19 left offset + 30 padding  */
+    box-sizing: border-box;     /* include padding in that width */
+    overflow-wrap: break-word;  /* just in case of very long words */
+  }
   .cd-timeline-content h2 {
-    font-size: 18px;   /* tweak to taste */
+    font-size: 17px;   /* tweak to taste */
     }
 }
 @media only screen and (min-width: 1170px) {
